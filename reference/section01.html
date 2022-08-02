@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상세페이지</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <style>
+        .about {
+            padding: 100px 0;
+            letter-spacing: -0.025px;
+            font-size: 15px;
+        }
+
+        .container {
+            display: flex;
+            gap: 30px;
+            width: 1170px;
+            margin: 0 auto;
+        }
+
+        .inner {
+            width: 1170px;
+            margin: 0 auto;
+        }
+
+        .about h2 {
+            font-size: 40px;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .about h2::after {
+            content: "";
+            display: block;
+            width: 30px;
+            height: 3px;
+            margin: 12px auto;
+            background: #0d6efd;
+        }
+
+        .txtBlue {
+            color: #0d6efd;
+        }
+
+        .about>p {
+            margin: 0 0 50px 0;
+            font-weight: 300;
+            text-align: center;
+        }
+
+        .about .container {
+            margin: 0 auto 100px auto;
+            justify-content: space-between;
+        }
+
+        .about .tit {
+            margin: 0 0 50px 0;
+            font-size: 25px;
+            font-weight: 500;
+            line-height: 1.45;
+        }
+
+        .about .container p {
+            margin: 0 0 30px 0;
+            line-height: 1.45;
+        }
+
+        .about figure {
+            width: 600px;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .about h3 {
+            position: relative;
+            font-size: 23px;
+            font-weight: 500;
+            padding: 0 0 0 10px;
+            margin: 0 0 10px 0;
+        }
+
+        .about h3::before {
+            content: "";
+            position: absolute;
+            inset: 50% auto auto 0;
+            transform: translateY(-50%);
+            width: 3px;
+            height: 20px;
+            background: #0d6efd;
+        }
+
+        table {
+            width: 100%;
+            border-top: 3px solid #0d6efd;
+            border-spacing: 0;
+            border-collapse: collapse;
+        }
+
+        table td {
+            padding: 15px 15px;
+            border-left: 1px solid #ddd;
+        }
+
+        table th {
+            padding: 15px 15px;
+            text-align: left;
+            background: #f7f7f7;
+            font-weight: 400;
+        }
+
+        table tr {
+            border-bottom: 1px solid #ddd;
+        }
+
+        .resTable {
+            width: 100%;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="about">
+        <h2><span class="txtBlue">CEO's</span> GREETINGS</h2>
+        <p>새로운 미래를 열어가는 작약 파랑</p>
+        <div class="container">
+            <div class="des">
+                <p class="tit">
+                    웹서비스의 <span class="txtBlue">새로운 미래</span><br>
+                    <span class="txtBlue">작약 파랑</span>이 만들어가겠습니다.
+                </p>
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br />Dolores, magni vero. Eum sed cum, nemo
+                    ut labore sunt. Odit, tempore.</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br /> Dolore velit quo laborum soluta unde
+                    modi ipsam!<br />
+                    Reiciendis quae quos earum saepe voluptatibus rerum id doloremque!</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br /> Voluptatibus porro enim, incidunt
+                    voluptates quae facilis.</p>
+
+                <p>작약 파랑 임직원 일동</p>
+            </div>
+            <figure>
+                <img src="../img/img01.png" alt="">
+            </figure>
+        </div>
+        <div class="inner">
+            <h3>주요현황</h3>
+            <table class="resTable">
+                <tbody>
+                    <tr>
+                        <th>주 소</th>
+                        <td>부산시 동래구 사직동 1234-56 쌍둥이 달래무리 옆</td>
+                    </tr>
+                    <tr>
+                        <th>전화번호</th>
+                        <td>051-324-3414</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</body>
+
+</html>
