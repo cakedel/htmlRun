@@ -1,0 +1,165 @@
+.container {
+    display: flex;
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.txtBlue {
+    color: #0d6efd;
+}
+
+.dotList li {
+    position: relative;
+    padding: 0 0 0 20px;
+    line-height: 1.2;
+    margin: 0 0 5px 0;
+}
+
+.dotList li::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    inset: 10px auto auto 0;
+    width: 3px;
+    height: 3px;
+    background: #0d6efd;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.Business {
+    padding: 100px 0;
+}
+
+.Business>p {
+    margin: 0 0 50px 0;
+    font-weight: 300;
+    text-align: center;
+}
+
+.Business h2 {
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.Business h2::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 12px auto;
+    background: #0d6efd;
+}
+
+.Business .container img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.Business figure {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.Business figure~figure {
+    border-left: 1px solid transparent;
+}
+
+.Business .cover {
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    position: absolute;
+    inset: 0 auto auto -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    transition: 0.5s;
+    padding: 40px 10px;
+}
+
+.Business figure:hover .cover {
+    inset: 0 auto auto 0;
+}
+
+/* .Business figure .inbox {
+    transition: 0.5s 0.3s;
+}
+.Business figure:hover .inbox {
+    transform: translateX(100px);
+} */
+
+.Business .cover a {
+    flex-grow: 0;
+    align-self: flex-start;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 10px 15px;
+    margin-top: auto;
+}
+
+.Business figure h3 {
+    /* align-self: stretch; */
+    padding: 0 0 10px 0;
+    font-size: 21px;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.Business .cover p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.25;
+}
+
+.Business .inner {
+    width: 1200px;
+    /* 1170px의 .inner>div의 양쪽 padding 30px을 더해준 값 */
+    margin: 0 auto;
+}
+
+.Business .inner::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.Business .inner>div {
+    float: left;
+    /* 쪼그라들기 때문에 width를 준다. */
+    width: 50%;
+    padding: 0 15px;
+    /* padding이 갭을 준다. div들의 양쪽이 합쳐져서 30px gap이됨 */
+}
+
+.Business .container {
+    margin: 0 auto 100px auto;
+}
+
+.Business .tit strong {
+    position: relative;
+    display: block;
+    padding: 0 0 0 20px;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+}
+
+.Business .tit p {
+    padding: 0 0 0 20px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.Business .tit strong::before {
+    content: "";
+    position: absolute;
+    inset: 0 auto auto 0;
+    width: 3px;
+    height: 100px;
+    background: #0d6efd;
+}
