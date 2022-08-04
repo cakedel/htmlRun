@@ -7,43 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>상세페이지</title>
     <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/basic.css">
     <style>
-        .about {
-            padding: 100px 0;
-            letter-spacing: -0.025px;
-            font-size: 15px;
-        }
-
-        .container {
-            display: flex;
-            gap: 30px;
-            width: 1170px;
-            margin: 0 auto;
-        }
-
-        .inner {
-            width: 1170px;
-            margin: 0 auto;
-        }
-
-        .about h2 {
-            font-size: 40px;
-            font-weight: 500;
-            text-align: center;
-        }
-
-        .about h2::after {
-            content: "";
-            display: block;
-            width: 30px;
-            height: 3px;
-            margin: 12px auto;
-            background: #0d6efd;
-        }
-
-        .txtBlue {
-            color: #0d6efd;
-        }
 
         .about>p {
             margin: 0 0 50px 0;
@@ -74,9 +39,13 @@
             overflow: hidden;
         }
 
+        .about .inner {
+            width: 1170px;
+        }
+
         .about h3 {
             position: relative;
-            font-size: 23px;
+            font-size: 20px;
             font-weight: 500;
             padding: 0 0 0 10px;
             margin: 0 0 10px 0;
@@ -89,30 +58,7 @@
             transform: translateY(-50%);
             width: 3px;
             height: 20px;
-            background: #0d6efd;
-        }
-
-        table {
-            width: 100%;
-            border-top: 3px solid #0d6efd;
-            border-spacing: 0;
-            border-collapse: collapse;
-        }
-
-        table td {
-            padding: 15px 15px;
-            border-left: 1px solid #ddd;
-        }
-
-        table th {
-            padding: 15px 15px;
-            text-align: left;
-            background: #f7f7f7;
-            font-weight: 400;
-        }
-
-        table tr {
-            border-bottom: 1px solid #ddd;
+            background: var(--mc);
         }
 
         .resTable {
@@ -123,14 +69,14 @@
 </head>
 
 <body>
-    <section class="about">
-        <h2><span class="txtBlue">CEO's</span> GREETINGS</h2>
+    <section class="about basicSec">
+        <h2><span>CEO's</span> GREETINGS</h2>
         <p>새로운 미래를 열어가는 작약 파랑</p>
         <div class="container">
             <div class="des">
                 <p class="tit">
-                    웹서비스의 <span class="txtBlue">새로운 미래</span><br>
-                    <span class="txtBlue">작약 파랑</span>이 만들어가겠습니다.
+                    웹서비스의 <span>새로운 미래</span><br>
+                    <span>작약 파랑</span>이 만들어가겠습니다.
                 </p>
 
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br />Dolores, magni vero. Eum sed cum, nemo

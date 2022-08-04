@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상세페이지 03</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/basic.css">
+    <style>
+        .Business02 .container {
+            gap: 50px;
+            margin-bottom: 50px;
+        }
+
+        .Business02 .left img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .Business02 .container>div {
+            flex: 1;
+        }
+
+        .Business02 .right {
+            display: flex;
+            flex-direction: column;
+            border-top: 2px solid var(--dc);
+            padding: 40px 0 0 0;
+        }
+
+        .Business02 .right h3 {
+            font-size: 31px;
+            font-weight: 700;
+            margin: 0 0 20px 0;
+        }
+
+        .Business02 .right p {
+            margin: 0 0 30px 0;
+        }
+
+        .Business02 .right .bottom {
+            margin: auto 0 0 0;
+            padding: 20px 15px 40px 15px;
+            background: var(--lc);
+            border-top: 1px solid var(--gc);
+            line-height: 1.2;
+        }
+
+        .Business02 .inner {
+            padding: 0 15px;
+        }
+
+        .Business02 .inner h3 {
+            font-size: 21px;
+            font-weight: 500;
+            margin: 0 0 30px 0;
+        }
+
+        .Business02 .inner h3::before {
+            content: "/";
+            display: inline-block;
+            margin: 0 10px 0 0;
+            font-size: 18px;
+            font-weight: 900;
+            color: var(--mc);
+            transform: translateY(-18px) rotate(35deg);
+            transform-origin: bottom;
+        }
+
+        .Business02 .inner ul {
+            padding: 20px 0;
+            border-top: 1px solid var(--dc);
+            border-bottom: 1px solid var(--dc);
+        }
+
+        .Business02 .inner ul>li {
+            float: left;
+            width: 50%;
+            padding: 5px 0;
+        }
+
+        .Business02 .inner ul>li::before {
+            content: attr(data-num);
+            display: inline-block;
+            padding: 5px;
+            background: var(--dc);
+            border-radius: 15px;
+            color: var(--lc);
+            margin: 0 15px 0 0;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="Business02 basicSec">
+        <h2><span>OUR</span> BUSINESS</h2>
+        <p>사람이 말을 너무 많이 하면 실수가 늘어</p>
+        <div class="container">
+            <div class="left">
+                <figure>
+                    <img src="./img/img03.png" alt="" />
+                </figure>
+            </div>
+            <div class="right">
+                <h3>심플하지만 다 갖춘 작약 파랑</h3>
+                <p>무화과 시즌이 오고 있습니다!</p>
+                <ul class="dotList">
+                    <li>무화과 나무를 키우고 싶어요.</li>
+                    <li>마당이 있는 집에서 살래요.</li>
+                    <li>집 사려면 돈을 많이 모아야지.</li>
+                    <li>일해라 일해라 일해라 일해라.</li>
+                </ul>
+                <div class="bottom">
+                    <p>무화과 나무를 키우고 싶어요. 마당이 있는 집에서 살래요.<br />집 사려면 돈을 많이 모아야지.</p>
+                </div>
+            </div>
+        </div>
+        <div class="inner">
+            <h3>심플하지만 다 갖춘 작약 파랑</h3>
+            <ul class="row">
+                <li data-num="01">토마토는 김치랑 볶아먹어도 맛있답니다.</li>
+                <!-- data-num 내가 만들어 쓰는 attribute -->
+                <li data-num="02">프리타타가 먹고싶습니다. 배고파요.</li>
+                <li data-num="03">아침을 안먹은 것도 아닌데 왜일까요.</li>
+                <li data-num="04">코딩해 코딩해 코딩해 코딩해.</li>
+            </ul>
+        </div>
+    </section>
+</body>
+
+</html>
