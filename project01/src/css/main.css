@@ -1,255 +1,77 @@
-.Nav {
-    margin: 100px 0;
-    line-height: 50px;
-    border-top: 1px solid var(--gc);
-    border-bottom: 1px solid var(--gc);
-}
+.Nav { line-height: 50px; border-top: 1px solid var(--gc); border-bottom: 1px solid var(--gc); } 
 
-.Nav ul {
-    display: flex; 
-    justify-content: center; 
-}
+.Nav ul { display: flex; justify-content: center; } 
 
-.Nav ul>li {padding: 0 20px; }
+.Nav ul>li { padding: 0 20px; } 
 
-.Nav ul>li~li { border-left: 1px solid var(--gc);}
+.Nav ul>li~li { border-left: 1px solid var(--gc); } 
 
-.about>p {
-    margin: 0 0 50px 0;
-    font-weight: 300;
-    text-align: center;
-}
+.about>p { margin: 0 0 50px 0; font-weight: 300; text-align: center; } 
 
-.about .container {
-    margin: 0 auto 100px auto;
-    justify-content: space-between;
-}
+.about .container { margin: 0 auto 100px auto; justify-content: space-between; } 
 
-.about .tit {
-    margin: 0 0 50px 0;
-    font-size: 25px;
-    font-weight: 500;
-    line-height: 1.45;
-}
+.about .tit { margin: 0 0 50px 0; font-size: 25px; font-weight: 500; line-height: 1.45; }
 
-.about .container p {
-    margin: 0 0 30px 0;
-    line-height: 1.45;
-}
+.about figure { width: 600px; height: 400px; overflow: hidden; } 
 
-.about figure {
-    width: 600px;
-    height: 400px;
-    overflow: hidden;
-}
+.about .inner { width: 1170px; } 
 
-.about .inner {
-    width: 1170px;
-}
+.About02 .top { float: left; width: 100%; margin: 0 0 50px 0; } 
+.About02 .left { float: left; width: 50%; font-size: 25px; text-align: center; } 
+.About02 .left::after { content:""; display: inline-block; width: 2px; height: 150px; background: var(--mc); } 
+.About02 .right { float: left; width: 50%; } 
 
-.about h3 {
-    position: relative;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 0 0 0 10px;
-    margin: 0 0 10px 0;
-}
+.resTable { width: 100%; overflow-x: auto; } 
 
-.about h3::before {
-    content: "";
-    position: absolute;
-    inset: 50% auto auto 0;
-    transform: translateY(-50%);
-    width: 3px;
-    height: 20px;
-    background: var(--mc);
-}
+.Business .container img { width: 100%; height: 300px; object-fit: cover; } 
 
-.resTable {
-    width: 100%;
-    overflow-x: auto;
-}
+.Business figure { flex: 1; position: relative; overflow: hidden; } 
 
-.Business .container img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-}
+.Business figure~figure { border-left: 1px solid transparent; } 
 
-.Business figure {
-    flex: 1;
-    position: relative;
-    overflow: hidden;
-}
+.Business .cover { display: flex; flex-direction: column; /* align-items: flex-start; */
+ position: absolute; inset: 0 auto auto -100%; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); color: #fff; transition: 0.5s; padding: 40px 10px; } 
 
-.Business figure~figure {
-    border-left: 1px solid transparent;
-}
+.Business figure:hover .cover { inset: 0 auto auto 0; } 
 
-.Business .cover {
-    display: flex;
-    flex-direction: column;
-    /* align-items: flex-start; */
-    position: absolute;
-    inset: 0 auto auto -100%;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    transition: 0.5s;
-    padding: 40px 10px;
-}
+/* .Business figure .inbox { transition: 0.5s 0.3s; } 
+.Business figure:hover .inbox { transform: translateX(100px); } */
 
-.Business figure:hover .cover {
-    inset: 0 auto auto 0;
-}
+.Business .cover a { flex-grow: 0; align-self: flex-start; border: 1px solid rgba(255, 255, 255, 0.5); padding: 10px 15px; margin-top: auto; } 
 
-/* .Business figure .inbox {
-    transition: 0.5s 0.3s;
-}
-.Business figure:hover .inbox {
-    transform: translateX(100px);
-} */
+.Business figure h3 { /* align-self: stretch; */
+ padding: 0 0 10px 0; font-size: 25px; font-weight: 500; margin: 0 0 20px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.5); } 
 
-.Business .cover a {
-    flex-grow: 0;
-    align-self: flex-start;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    padding: 10px 15px;
-    margin-top: auto;
-}
+.Business .cover p { font-size: 15px; font-weight: 300; line-height: 1.25; } 
 
-.Business figure h3 {
-    /* align-self: stretch; */
-    padding: 0 0 10px 0;
-    font-size: 21px;
-    font-weight: 500;
-    margin: 0 0 20px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-}
+.Business .container { margin: 0 auto 100px auto; } 
 
-.Business .cover p {
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 1.25;
-}
+.Business .tit strong { position: relative; display: block; padding: 0 0 0 20px; font-size: 30px; font-weight: 700; margin: 0 0 20px 0; } 
 
-.Business .inner>div {
-    float: left;
-    /* 쪼그라들기 때문에 width를 준다. */
-    width: 50%;
-    padding: 0 15px;
-    /* padding이 갭을 준다. div들의 양쪽이 합쳐져서 30px gap이됨 */
-}
+.Business .tit p { padding: 0 0 0 20px; font-size: 15px; font-weight: 300; } 
 
-.Business .container {
-    margin: 0 auto 100px auto;
-}
+.Business .tit strong::before { content: ""; position: absolute; inset: 0 auto auto 0; width: 3px; height: 100px; background: var(--mc); } 
 
-.Business .tit strong {
-    position: relative;
-    display: block;
-    padding: 0 0 0 20px;
-    font-size: 30px;
-    font-weight: 700;
-    margin: 0 0 20px 0;
-}
+.Business02 .container { gap: 50px; margin-bottom: 50px; } 
 
-.Business .tit p {
-    padding: 0 0 0 20px;
-    font-size: 15px;
-    font-weight: 300;
-}
+.Business02 .left img { width: 100%; height: 400px; object-fit: cover; } 
 
-.Business .tit strong::before {
-    content: "";
-    position: absolute;
-    inset: 0 auto auto 0;
-    width: 3px;
-    height: 100px;
-    background: var(--mc);
-}
+.Business02 .container>div { flex: 1; } 
 
-.Business02 .container {
-    gap: 50px;
-    margin-bottom: 50px;
-}
+.Business02 .right { display: flex; flex-direction: column; border-top: 2px solid var(--dc); padding: 40px 0 0 0; } 
 
-.Business02 .left img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-}
+.Business02 .right h3 { font-size: 31px; font-weight: 700; margin: 0 0 20px 0; } 
 
-.Business02 .container>div {
-    flex: 1;
-}
+.Business02 .right p { margin: 0 0 30px 0; } 
 
-.Business02 .right {
-    display: flex;
-    flex-direction: column;
-    border-top: 2px solid var(--dc);
-    padding: 40px 0 0 0;
-}
+.Business02 .right .bottom { margin: auto 0 0 0; padding: 20px 15px 40px 15px; background: var(--lc); border-top: 1px solid var(--gc); line-height: 1.2; } 
 
-.Business02 .right h3 {
-    font-size: 31px;
-    font-weight: 700;
-    margin: 0 0 20px 0;
-}
+.Business02 .inner h3 { font-size: 21px; font-weight: 500; margin: 0 0 30px 0; } 
 
-.Business02 .right p {
-    margin: 0 0 30px 0;
-}
+.Business02 .inner h3::before { content: "/"; display: inline-block; margin: 0 10px 0 0; font-size: 18px; font-weight: 900; color: var(--mc); transform: translateY(-18px) rotate(35deg); transform-origin: bottom; } 
 
-.Business02 .right .bottom {
-    margin: auto 0 0 0;
-    padding: 20px 15px 40px 15px;
-    background: var(--lc);
-    border-top: 1px solid var(--gc);
-    line-height: 1.2;
-}
+.Business02 .inner ul { padding: 20px 0; border-top: 1px solid var(--dc); border-bottom: 1px solid var(--dc); } 
 
-.Business02 .inner {
-    padding: 0 15px;
-}
+.Business02 .inner ul>li { float: left; width: 50%; padding: 5px 0; } 
 
-.Business02 .inner h3 {
-    font-size: 21px;
-    font-weight: 500;
-    margin: 0 0 30px 0;
-}
-
-.Business02 .inner h3::before {
-    content: "/";
-    display: inline-block;
-    margin: 0 10px 0 0;
-    font-size: 18px;
-    font-weight: 900;
-    color: var(--mc);
-    transform: translateY(-18px) rotate(35deg);
-    transform-origin: bottom;
-}
-
-.Business02 .inner ul {
-    padding: 20px 0;
-    border-top: 1px solid var(--dc);
-    border-bottom: 1px solid var(--dc);
-}
-
-.Business02 .inner ul>li {
-    float: left;
-    width: 50%;
-    padding: 5px 0;
-}
-
-.Business02 .inner ul>li::before {
-    content: attr(data-num);
-    display: inline-block;
-    padding: 5px;
-    background: var(--dc);
-    border-radius: 15px;
-    color: var(--lc);
-    margin: 0 15px 0 0;
-    font-style: italic;
-}
+.Business02 .inner ul>li::before { content: attr(data-num); display: inline-block; padding: 5px; background: var(--dc); border-radius: 15px; color: var(--lc); margin: 0 15px 0 0; font-style: italic; } 

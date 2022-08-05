@@ -1,105 +1,43 @@
-:root {
-    --mc :#0d6efd;
-    --sc :#ff0000;
-    --gc : #dddddd;
-    --lc : #f7f7f7;
-    --dc :#444444;
-}
+:root { --mc :#0d6efd; --sc :#ff0000; --gc : #dddddd; --lc : #f7f7f7; --dc :#444444; } 
 
-.container {
-    display: flex;
-    gap: 30px;
-    width: 1170px;
-    margin: 0 auto;
-}
+.container { display: flex; gap: 30px; width: 1170px; margin: 0 auto; } 
 
-.inner {
-    width: 1200px;
-    margin: 0 auto;
-}
+.inner { width: 1200px; margin: 0 auto; } 
 
-.inner::after {
-    content: "";
-    display: block;
-    clear: both;
-}
+.inner::after { content: ""; display: block; clear: both; } 
 /* float이 떴을 때 부모높이가 뜨는 것을 방지 */
 
-.mainColor {
-    color: var(--mc);
-}
+.mainColor { color: var(--mc); } 
 
-.basicSec {
-    padding: 100px 0;
-    letter-spacing: -0.025px;
-    font-size: 15px;
+.basicSec { padding: 100px 0; letter-spacing: -0.025px; font-size: 15px;}
 
-}
+.basicSec h2 { font-size: 40px; font-weight: 500; text-align: center; } 
 
-.basicSec h2 {
-    font-size: 40px;
-    font-weight: 500;
-    text-align: center;
-}
+span { color: var(--mc); } 
 
-span {
-    color: var(--mc);
-}
+.basicSec h2::after { content: ""; display: block; width: 30px; height: 3px; margin: 12px auto; background: var(--mc); } 
 
-.basicSec h2::after {
-    content: "";
-    display: block;
-    width: 30px;
-    height: 3px;
-    margin: 12px auto;
-    background: var(--mc);
-}
+.basicSec>p { margin: 0 0 50px 0; font-weight: 300; text-align: center; } 
 
-.basicSec>p {
-    margin: 0 0 50px 0;
-    font-weight: 300;
-    text-align: center;
-}
+.basicSec .container p { margin: 0 0 30px 0; line-height: 1.45; } 
+.basicSec .inner p { margin: 0 0 30px 0; line-height: 1.45; } 
 
+.basicSec h3 { position: relative; font-size: 20px; font-weight: 500; padding: 0 0 0 10px; margin: 0 0 10px 0; } 
 
-.dotList li {
-    position: relative;
-    padding: 0 0 0 20px;
-    line-height: 1.2;
-    margin: 0 0 5px 0;
-}
+.basicSec h3::before { content: ""; position: absolute; inset: 50% auto auto 0; transform: translateY(-50%); width: 3px; height: 20px; background: var(--mc); } 
 
-.dotList li::before {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    inset: 10px auto auto 0;
-    width: 3px;
-    height: 3px;
-    background: var(--mc);
-    border-radius: 50%;
-    vertical-align: middle;
-}
+.basicSec .pd15 { padding: 0 15px;}
 
-table {
-    width: 100%;
-    border-top: 3px solid var(--mc);
-    border-spacing: 0;
-    border-collapse: collapse;
-}
+.basicSec .tit { margin: 0 0 40px 0; line-height: 1.45; font-size: 25px; } 
 
-table td {
-    padding: 15px 15px;
-    border-left: 1px solid var(--gc);
-}
+.dotList li { position: relative; padding: 0 0 0 20px; line-height: 1.2; margin: 0 0 5px 0; } 
 
-table th {
-    padding: 15px 15px;
-    text-align: left;
-    background: var(--lc);
-    font-weight: 400;
-}
+.dotList li::before { content: ""; display: inline-block; position: absolute; inset: 10px auto auto 0; width: 3px; height: 3px; background: var(--mc); border-radius: 50%; vertical-align: middle; } 
 
-table tr {
-    border-bottom: 1px solid var(--gc);
-}
+table { width: 100%; border-top: 3px solid var(--mc); border-spacing: 0; border-collapse: collapse; } 
+
+table td { padding: 15px 15px; border-left: 1px solid var(--gc); } 
+
+table th { padding: 15px 15px; text-align: left; background: var(--lc); font-weight: 400; } 
+
+table tr { border-bottom: 1px solid var(--gc); } 
